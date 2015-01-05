@@ -1,0 +1,23 @@
+Kapke\Provider\Clients\Entity\Client:
+    type: entity
+    table: clients_provider__client
+    id:
+        id:
+            type: integer
+            generator: {strategy: AUTO}
+    manyToMany:
+        products:
+            targetEntity: Product
+            joinTable:
+                name: clients_provider__clients_products
+                joinColumns:
+                    client_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    product_id:
+                        referencedColumnName: id
+    fields:
+        name:
+            type: string
+        surname:
+            type: string

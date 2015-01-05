@@ -1,0 +1,10 @@
+Kapke\Provider\Clients\Entity\Vendor:
+    type: entity
+    table: clients_provider__vendor
+    id:
+        id:
+            type: integer
+            generator: {strategy: AUTO}
+    fields:
+        name:
+            type: string

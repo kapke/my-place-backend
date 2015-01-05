@@ -1,0 +1,6 @@
+kapke_my_place:
+    module:
+        name: ClientConversions
+        parent: ClientData
+        title: Client Conversions
+        vendor: Kapke

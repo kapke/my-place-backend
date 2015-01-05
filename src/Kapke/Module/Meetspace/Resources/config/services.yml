@@ -1,0 +1,4 @@
+services:
+    kapke_meetspace_module.events_controller:
+        class: Kapke\Module\Meetspace\Controller\EventsController
+        arguments: [@kapke_events_provider.events_repository, @fos_rest.view_handler]

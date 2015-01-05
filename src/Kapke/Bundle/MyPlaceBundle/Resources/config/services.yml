@@ -1,0 +1,19 @@
+parameters:
+    kapke_my_place.response_parsers: 
+        json_parser:
+            class: Kapke\Bundle\MyPlaceBundle\Parser\JsonParser
+            criteria:
+                Content-Type: application/json
+services:
+    kapke_my_place.modules_manager:
+        class: Kapke\Bundle\MyPlaceBundle\DependencyInjection\ModuleManager
+        arguments: [%kapke_my_place.modules%]
+    kapke_my_place.crud_controller_factory:
+        class: Kapke\Bundle\MyPlaceBundle\Controller\CrudControllerFactory
+        arguments: [@doctrine.orm.entity_manager, @fos_rest.view_handler, @router]
+    kapke_my_place.proxy_factory:
+        class: Kapke\Bundle\MyPlaceBundle\Proxy\ProxyFactory
+        arguments: [@kapke_my_place.response_parser_factory]
+    kapke_my_place.response_parser_factory:	
+        class: Kapke\Bundle\MyPlaceBundle\Proxy\ResponseParserFactory
+        arguments: [%kapke_my_place.response_parsers%]

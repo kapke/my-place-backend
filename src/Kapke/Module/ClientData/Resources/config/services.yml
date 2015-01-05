@@ -1,0 +1,14 @@
+parameters:
+
+services:
+    kapke_client_data_module.clients_controller:
+        class: Kapke\Module\ClientData\Controller\ClientsController
+        arguments: [@doctrine, @kapke_my_place.crud_controller_factory]
+
+    kapke_client_data_module.products_controller:
+        class: Kapke\Module\ClientData\Controller\ProductsController
+        arguments: [@doctrine, @router, @kapke_my_place.crud_controller_factory]
+
+    kapke_client_data_module.vendors_controller:
+        class: Kapke\Module\ClientData\Controller\VendorsController
+        arguments: [@kapke_my_place.crud_controller_factory]
