@@ -1,0 +1,4 @@
+services:
+    kapke_client_provider.client_manager:
+        class: Kapke\Provider\Clients\ClientManager
+        arguments: [@doctrine]

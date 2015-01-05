@@ -1,0 +1,6 @@
+parameters:
+
+services:
+    kapke_events_provider.events_repository:
+        class: Kapke\Provider\Events\EventsRepository
+        arguments: [@kapke_my_place.proxy_factory]
