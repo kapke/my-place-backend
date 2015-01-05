@@ -1,0 +1,3 @@
+modules:
+    type: rest
+    resource: Kapke\Bundle\MyPlaceBundle\Controller\ModulesController

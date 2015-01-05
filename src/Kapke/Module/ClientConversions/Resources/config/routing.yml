@@ -1,0 +1,3 @@
+conversions:
+    type: rest
+    resource: Kapke\Module\ClientConversions\Controller\ConversionsController

@@ -1,0 +1,168 @@
+Doctrine\ORM\Mapping\ClassMetadata Object
+(
+    [name] => Kapke\Provider\Notes\Entity\Note
+    [namespace] => Kapke\Provider\Notes\Entity
+    [rootEntityName] => Kapke\Provider\Notes\Entity\Note
+    [customGeneratorDefinition] => 
+    [customRepositoryClassName] => 
+    [isMappedSuperclass] => 
+    [parentClasses] => Array
+        (
+        )
+
+    [subClasses] => Array
+        (
+        )
+
+    [namedQueries] => Array
+        (
+        )
+
+    [namedNativeQueries] => Array
+        (
+        )
+
+    [sqlResultSetMappings] => Array
+        (
+        )
+
+    [identifier] => Array
+        (
+            [0] => id
+        )
+
+    [inheritanceType] => 1
+    [generatorType] => 2
+    [fieldMappings] => Array
+        (
+            [id] => Array
+                (
+                    [id] => 1
+                    [fieldName] => id
+                    [type] => integer
+                    [columnName] => id
+                )
+
+            [title] => Array
+                (
+                    [fieldName] => title
+                    [type] => string
+                    [columnName] => title
+                )
+
+            [description] => Array
+                (
+                    [fieldName] => description
+                    [type] => string
+                    [columnName] => description
+                )
+
+            [content] => Array
+                (
+                    [fieldName] => content
+                    [type] => string
+                    [columnName] => content
+                )
+
+        )
+
+    [fieldNames] => Array
+        (
+            [id] => id
+            [title] => title
+            [description] => description
+            [content] => content
+        )
+
+    [columnNames] => Array
+        (
+            [id] => id
+            [title] => title
+            [description] => description
+            [content] => content
+        )
+
+    [discriminatorValue] => 
+    [discriminatorMap] => Array
+        (
+        )
+
+    [discriminatorColumn] => 
+    [table] => Array
+        (
+            [name] => notes_provider__note
+        )
+
+    [lifecycleCallbacks] => Array
+        (
+        )
+
+    [entityListeners] => Array
+        (
+        )
+
+    [associationMappings] => Array
+        (
+        )
+
+    [isIdentifierComposite] => 
+    [containsForeignIdentifier] => 
+    [idGenerator] => Doctrine\ORM\Id\SequenceGenerator Object
+        (
+            [_allocationSize:Doctrine\ORM\Id\SequenceGenerator:private] => 1
+            [_sequenceName:Doctrine\ORM\Id\SequenceGenerator:private] => notes_provider__note_id_seq
+            [_nextValue:Doctrine\ORM\Id\SequenceGenerator:private] => 0
+            [_maxValue:Doctrine\ORM\Id\SequenceGenerator:private] => 
+        )
+
+    [sequenceGeneratorDefinition] => Array
+        (
+            [sequenceName] => notes_provider__note_id_seq
+            [allocationSize] => 1
+            [initialValue] => 1
+        )
+
+    [tableGeneratorDefinition] => 
+    [changeTrackingPolicy] => 1
+    [isVersioned] => 
+    [versionField] => 
+    [reflClass] => ReflectionClass Object
+        (
+            [name] => Kapke\Provider\Notes\Entity\Note
+        )
+
+    [isReadOnly] => 
+    [namingStrategy:protected] => Doctrine\ORM\Mapping\DefaultNamingStrategy Object
+        (
+        )
+
+    [reflFields] => Array
+        (
+            [id] => ReflectionProperty Object
+                (
+                    [name] => id
+                    [class] => Kapke\Provider\Notes\Entity\Note
+                )
+
+            [title] => ReflectionProperty Object
+                (
+                    [name] => title
+                    [class] => Kapke\Provider\Notes\Entity\Note
+                )
+
+            [description] => ReflectionProperty Object
+                (
+                    [name] => description
+                    [class] => Kapke\Provider\Notes\Entity\Note
+                )
+
+            [content] => ReflectionProperty Object
+                (
+                    [name] => content
+                    [class] => Kapke\Provider\Notes\Entity\Note
+                )
+
+        )
+
+    [_prototype:Doctrine\ORM\Mapping\ClassMetadataInfo:private] => 
+)

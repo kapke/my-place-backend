@@ -1,0 +1,5 @@
+kapke_my_place:
+    module:
+        name: Meetspace
+        title: Meetspace
+        vendor: Kapke

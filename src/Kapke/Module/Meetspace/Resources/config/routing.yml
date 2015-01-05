@@ -1,0 +1,3 @@
+meetspace.events:
+    type: rest
+    resource: kapke_meetspace_module.events_controller

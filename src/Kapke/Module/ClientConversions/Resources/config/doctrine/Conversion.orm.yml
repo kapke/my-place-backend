@@ -1,0 +1,26 @@
+Kapke\Module\ClientConversions\Entity\Conversion:
+    type: entity
+    table: client_conversions__conversion
+    id:
+        id:
+            type: integer
+            generator: {strategy: AUTO}
+    manyToOne:
+        product:
+            targetEntity: Kapke\Provider\Clients\Entity\Product
+            joinColumn:
+                name: product_id
+                referencedColumnName: id
+        client:
+            targetEntity: Kapke\Provider\Clients\Entity\Client
+            joinColumn:
+                name: client_id
+                referencedColumnName: id
+                onDelete: cascade
+    fields:
+        timestamp:
+            type: datetime
+        note:
+            type: string
+            options:
+                default: ""

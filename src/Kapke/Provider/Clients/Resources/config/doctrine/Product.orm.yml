@@ -1,0 +1,16 @@
+Kapke\Provider\Clients\Entity\Product:
+    type: entity
+    table: clients_provider__product
+    id:
+        id:
+            type: integer
+            generator: {strategy: AUTO}
+    manyToOne:
+        vendor:
+            targetEntity: Vendor
+            joinColumn:
+                vendor_id:
+                    referencedColumnName: id
+    fields:
+        name:
+            type: string

@@ -1,0 +1,12 @@
+client_data.clients:
+    type: rest
+    resource: kapke_client_data_module.clients_controller
+
+
+client_data.products:
+    type: rest
+    resource: kapke_client_data_module.products_controller
+
+client_data.vendors:
+    type: rest
+    resource: kapke_client_data_module.vendors_controller

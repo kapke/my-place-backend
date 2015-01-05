@@ -1,0 +1,3 @@
+notes:
+    type: rest
+    resource: kapke_notes_module.notes_controller
